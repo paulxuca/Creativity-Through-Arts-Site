@@ -1,0 +1,203 @@
+<template name="debonair">
+<link href='https://fonts.googleapis.com/css?family=Megrim' rel='stylesheet' type='text/css'>
+
+<style>
+.navbar{
+	background-color: #1a1a1a;
+
+}
+
+.mainFooter{
+	background: #1a1a1a;
+
+}
+#footerLinks li:hover{
+	text-decoration: none;
+}
+
+canvas{
+	display: block;
+  vertical-align:bottom;
+  z-index:-1;
+}
+
+#particles-js{
+
+  background: -webkit-linear-gradient(90deg, #16222A 10%, #3A6073 90%); /* Chrome 10+, Saf5.1+ */
+  background:    -moz-linear-gradient(90deg, #16222A 10%, #3A6073 90%); /* FF3.6+ */
+  background:     -ms-linear-gradient(90deg, #16222A 10%, #3A6073 90%); /* IE10 */
+  background:      -o-linear-gradient(90deg, #16222A 10%, #3A6073 90%); /* Opera 11.10+ */
+  background:         linear-gradient(90deg, #16222A 10%, #3A6073 90%); /* W3C */
+        
+}
+
+</style>
+
+
+{{> navbar}}
+<!--
+<div class="row" style="height:100vh;font-family: 'Megrim', cursive;background-color:black;">
+<div id="particles-js" style="">
+<div class="container verticalCenter text-center">
+<h1 style="font-size:100px;color:white">Debonair</h1>
+<h3 style="color:white;margin-top:-20px">Fashion Show</h3>
+
+
+</div>
+</div>
+</div>
+
+
+!-->
+
+<div id="particles-js">
+<div class="row">
+<div class="container" style="padding-top:200px;position:absolute;width:100%">
+<h1 style="text-align:center;font-family: 'Megrim', cursive;color:white;font-size:100px">Debonair</h1>
+<h5>Fashion Show</h5>
+</div>
+</div>
+</div>
+
+{{> footer}}
+
+
+
+
+
+
+
+
+
+
+
+<script src="particles.js"></script>
+<script type="text/javascript">
+/* -----------------------------------------------
+/* How to use? : Check the GitHub README
+/* ----------------------------------------------- */
+
+/* To load a config file (particles.json) you need to host this demo (MAMP/WAMP/local)... */
+/*
+particlesJS.load('particles-js', 'particles.json', function() {
+  console.log('particles.js loaded - callback');
+});
+*/
+
+/* Otherwise just put the config content (json): */
+
+particlesJS('particles-js',
+  
+  {
+    "particles": {
+      "number": {
+        "value": 120,
+        "density": {
+          "enable": true,
+          "value_area": 800
+        }
+      },
+      "color": {
+        "value": "#ffffff"
+      },
+      "shape": {
+        "type": "polygon",
+        "stroke": {
+          "width": 0,
+          "color": "#000000"
+        },
+        "polygon": {
+          "nb_sides": 5
+        },
+        "image": {
+          "src": "img/github.svg",
+          "width": 100,
+          "height": 100
+        }
+      },
+      "opacity": {
+        "value": 0.5,
+        "random": true,
+        "anim": {
+          "enable": false,
+          "speed": 1,
+          "opacity_min": 0.1,
+          "sync": false
+        }
+      },
+      "size": {
+        "value": 3,
+        "random": true,
+        "anim": {
+          "enable": false,
+          "speed": 40,
+          "size_min": 0.1,
+          "sync": false
+        }
+      },
+      "line_linked": {
+        "enable": false,
+        "distance": 150,
+        "color": "#ffffff",
+        "opacity": 0.4,
+        "width": 1
+      },
+      "move": {
+        "enable": true,
+        "speed": 2,
+        "direction": "none",
+        "random": false,
+        "straight": false,
+        "out_mode": "out",
+        "attract": {
+          "enable": false,
+          "rotateX": 600,
+          "rotateY": 1200
+        }
+      }
+    },
+    "interactivity": {
+      "detect_on": "window",
+      "events": {
+        "onhover": {
+          "enable": true,
+          "mode": "bubble"
+        },
+        "onclick": {
+          "enable": true,
+          "mode": "push"
+        },
+        "resize": true
+      },
+      "modes": {
+        "grab": {
+          "distance": 400,
+          "line_linked": {
+            "opacity": 1
+          }
+        },
+        "bubble": {
+          "distance": 250,
+          "size": 0,
+          "duration": 2,
+          "opacity": 0,
+          "speed": 3
+        },
+        "repulse": {
+          "distance": 200
+        },
+        "push": {
+          "particles_nb": 4
+        },
+        "remove": {
+          "particles_nb": 2
+        }
+      }
+    },
+    "retina_detect": true,
+  }
+
+);
+
+</script>
+</template>

@@ -1,0 +1,168 @@
+<template name="footer">
+  <div class="footer" style="font-family: 'Montserrat', sans-serif">
+<footer>
+  <div class="row mainFooter">
+    <div class="container">
+      <div class="col-md-4 text-center">
+      <div class="col-md-12">
+      <a class="logoFooter hvr-bob" href="/"><img src="/media/logoflat.png" height="100px" style="margin-top:40px;"></a>
+      </div>
+      <div class="col-md-12" style="padding-top:30px">
+       <a href="http://www.facebook.com/CreativityThroughArts"  class="socialIcon"><i class="fa fa-facebook"></i></a>
+        
+          <a href="http://twitter.com/CTAcouncil" class="socialIcon"><i class="fa fa-twitter" ></i></a>
+       
+          <a href="https://www.youtube.com/channel/UCUSMKKWH6H1EibJQbZhfD0g" class="socialIcon"><i class="fa fa-youtube"></i></a>
+    </div>
+    </div>
+    <div class="col-md-4" style="margin-top:80px;font-size:14px"  id="quicklinks">
+    <div class="col-md-5 col-xs-12">
+    <ul style="list-style:none" id="footerLinks">
+    <a href="/home"><li>Home</li></a>
+
+    <a href="/about"><li>About Us</li></a>
+
+
+    <a href="/events"><li>Our Events</li></a>
+    <a href="http://blog.creativitythrougharts.com"><li>Blog</li></a>
+    <a href="/contact"><li>Contact Us</li></a>
+  </ul>
+  </div>
+  <div class="col-md-7 col-xs-12">
+<ul style="list-style:none" id="footerLinks">
+    <a href="/ctc"><li>Creativity Through Code</li></a>
+    <a href="/coffeehouse"><li>Coffee House</li></a>
+  </ul>
+
+  </div>
+    </div>
+
+    <div class="col-md-4" style="padding-top:80px" id="quicklinks">
+    <h4>About Us</h4>
+    <p>Creativity Through Arts was founded in 2014 with an aim to encourage youth leaders of the community to continue pursuing their artistic hobbies.</p>
+
+
+
+    </div>
+   <!--
+      <div class="col-sm-12" style="margin-top:40px;">
+      <p class="copyright">Crafted with passion by <span class="glyphicon glyphicon-fire hvr-pulse-grow"></span> Creativity Through Arts</p>
+      <p class="copyright">
+      <b>
+      <a href="/privacy">Privacy Policy</a> - <a href="/termsofService">Terms of Service</a></b>
+      </p>
+    </div>
+    !-->
+  </div>
+</div>
+
+</footer>
+</div>
+</template>
+
+
+<template name="eventsPanel"><!--MAIN PANEL FOR EVENTS LIST!-->
+	<div id="eventsMain">
+{{#if eventOccur}}
+{{#each eventdescriptions}}
+  <div class="col-sm-4 col-xs-12">
+    <div class="thumbnail eventsCard">
+      <img src="{{eventImg}}" alt="{{eventimgAlt}}">
+      <div class="caption">
+        <h3>{{eventTitle}}</h3>
+        <p class="date">{{eventDate}}</p>
+        <p>{{eventDesc}}</p>
+      </div>
+    </div>
+  </div>
+{{/each}}
+{{else}}
+<h4 style="padding-bottom:30px;">No events are found at this time! Check back again soon! <i class="fa fa-thumbs-o-up"></i></h4>
+{{/if}}
+</div>
+</template>
+
+<template name="submitPerformance">
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content submiteventModal">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Find your next performance!</h4>
+      </div>
+      <div class="modal-body">
+        <div class="container-fluid">
+          <div class='col-sm-4'>
+    <p class="textCenter" style="padding-top:20px;">Performances are hard to come by. We understand that. Creativity Through Arts makes it easier for you to fully express your talents!</p>
+ </div>
+          <div class="col-sm-8">
+            {{> quickForm collection="Performers" schema=schemaFromJSON id="insertPostForm" type="update"}}
+ </div>
+</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+    </div>
+  </div>
+</div>
+
+</template>
+
+	   
+
+
+<template name="navbar">
+
+<nav class="navbar navbar-default navbar-fixed-top" style="font-family:'Montserrat', sans-serif">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="/home">Home</a></li>
+        <li><a href="/about">About Us</a></li>
+            <li><a href="/events">Our Events</a></li>
+            <li><a href="http://blog.creativitythrougharts.com">Blog</a></li>
+            <li><a href="mailto:creativitythrougharts@gmail.com">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-68460643-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</template>
+
+    <template name="teamPanel">
+{{#each teammembers}}
+<a href="/team/this._id">
+<div class="col-md-3 col-xs-6 wow fadeInLeft">
+<div class="thumbnail teamsCard">
+      <img src="{{teammemberImg}}" alt="{{teammemberName}}">
+      <div class="caption">
+        <h3 style="margin-bottom:0px;text-align:left;font-size:20px">{{teammemberName}}</h3>
+        <p class="date" style="line-height:1.1;text-align:left">{{teammemberPosition}}</p>
+      </div>
+    </div>
+</div>
+</a>
+{{/each}}
+
+</template>

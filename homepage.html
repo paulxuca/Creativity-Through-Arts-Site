@@ -1,0 +1,98 @@
+<template name="homePage">
+{{> navbar}}
+
+<div style="font-family: 'Montserrat', sans-serif">
+<div class="jumbotron text-center wow fadeInLeft" id="introductionMain">
+<div class="overlay" style="height:100vh;">
+	<div class="container verticalCenter" id="introductionmainContent">
+  <h1>Unleash your <b>Creativity.</b></h1>
+  <p>Creativity Through Arts aims to encourage <b><span class="liveType"></span>
+</b> to pursue their artistic paths.</p>
+  <p><a class="btn btn-primary btn-lg" href="/signup" role="button">For Performers</a>
+  <a class="btn btn-primary btn-lg" href="/events" role="button">For Volunteers</a>
+  </p>
+  </div>
+</div>
+</div>
+
+<div class="row" style="height:100vh;position:relative" id="about">
+  <div class="container verticalCenter">
+      <div class="col-xs-12 text-center" style="color:orange">
+          <h1><i class="fa fa-hand-lizard-o fa-flip-horizontal"></i><i class="fa fa-hand-lizard-o"></i></h1>
+          <h1 style="font-weight:700">Rethinking Creativity</h1>
+          <div class="col-xs-8 col-xs-offset-2">
+          <p style="font-size:18px">Creativity Through Arts is York Regions <b>premier arts council</b>. We dedicate ourselves to create change, for youth, through the arts. We <b>work hard</b>, <b>play hard</b> and get things done. Our council is quick to move and we strive to be a beacon of arts in the community.</p>
+          </div>
+  </div>
+  </div>
+  <div style="bottom:0;position:absolute;width:25%" class="animated infinite swing boat">
+  <img src="/media/homeboat.svg" style="width:100%;margin-bottom:8%">
+  </div>
+  <div style="bottom:0;position:absolute">
+  <img style="width:100%" src="/media/ctabeacon.svg">
+  </div>
+</div>
+
+<div class="row mainOcean" style="height:100vh;position:relative">
+
+<div class="container verticalCenter text-center" style="color:white;font-size:2vh">
+
+<div class="col-md-4 col-xls-8 col-xls-offset-2">
+      <span class="fa fa-heart hvr-bob mainpageIcon" aria-hidden="true" style="font-size:3vh"></span>
+      <h4><b>Volunteer</b></h4>
+      Creativity Through Arts provides opportunities for volunteering through popular annual events and exposes you to the arts.
+    </div>
+
+    <div class="col-md-4 col-xls-8 col-xls-offset-2">
+      <span class="fa fa-map-signs hvr-bob mainpageIcon" aria-hidden="true" style="font-size:3vh"></span>
+      <h4><b>Experience</b></h4>
+      Creativity Through Arts hosts events and gatherings for like-minded individuals to experience the arts in their local communities.
+    </div>
+
+    <div class="col-md-4 col-xls-8 col-xls-offset-2">
+      <span class="glyphicon glyphicon-bullhorn hvr-bob mainpageIcon" aria-hidden="true" style="font-size:3vh"></span>
+      <h4><b>Lead</b></h4>
+      Creativity Through Arts provides opportunities for leaders to demonstrate their leadership in their local communities through assisting in planning, hosting and operating events.
+    </div>
+
+<div class="col-md-6 col-md-offset-3 col-xs-10 col-xs-offset-1" style="padding-bottom:20px">
+<h2>Sign-up for our newsletter</h2>
+<p>To receive the inside scoop on creativity and get performance, leadership and volunteer opportunities straight to your inbox!</p>
+<form action="https://getform.org/f/f9c7a33e-de56-41cb-9e9c-cfe954bd9cb5" method="POST" style="padding-top:10px" id="newsletter">
+  <div class="form-group">
+  <div class="input-group">
+    <input type="text" name="email" class="form-control" id="Email" placeholder="Email">
+     <div class="input-group-btn">
+        <button type="submit" form="newsletter" class="btn btn-default">Submit</button>
+      </div><!-- /btn-group -->
+      </div>
+  </div>
+</form>
+</div>
+</div>
+
+
+
+</div>
+</div>
+
+{{> footer}}
+
+
+
+
+
+<script type="text/javascript">
+
+    $(function(){
+        $(".liveType").typed({
+            strings: ["artists", "youths", "leaders"],
+            typeSpeed: 400,
+            loop:true
+        });
+    });
+
+
+</script>
+{{> submitPerformance}}
+</template>

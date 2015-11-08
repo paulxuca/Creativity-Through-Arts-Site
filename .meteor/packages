@@ -1,0 +1,34 @@
+# Meteor packages used by this project, one per line.
+# Check this file (and the other files in this directory) into your repository.
+#
+# 'meteor add' and 'meteor remove' will edit this file for you,
+# but you can also edit it by hand.
+
+autopublish
+twbs:bootstrap
+iron:router
+timmyg:wow
+chrisbutler:typed.js
+danappelxx:hover.css
+fortawesome:fontawesome
+aldeed:autoform
+aldeed:collection2
+standard-minifiers
+meteor-base
+mobile-experience
+mongo
+blaze-html-templates
+session
+jquery
+tracker
+logging
+reload
+ejson
+spacebars
+check
+okgrow:router-autoscroll
+ostrio:iron-router-title
+spiderable
+gadicohen:sitemaps
+dburles:google-maps
+newswim:particles

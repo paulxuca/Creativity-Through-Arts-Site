@@ -1,0 +1,87 @@
+<template name="coffeehouse">
+<style>
+.navbar{
+	background-color: rgb(45, 70, 76);
+}
+.mainFooter{
+	background: rgb(45, 70, 76);
+}
+
+body{
+	font-family: 'Montserrat', sans-serif;
+}
+
+.navbar{
+	position: absolute;
+}
+
+#coffeehouseBtn .btn{
+background-color:rgba(0,0,0,0);
+border-color: white;
+}
+#coffeehouseBtn .btn:hover{
+background-color:rgb(45, 70, 76);
+border-color: rgb(45, 70, 76);
+}
+
+
+</style>
+
+
+{{> navbar}}
+
+<div class="row coffeehouseMain">
+	<div class="container verticalCenter text-right">
+	<div class="col-xs-10 col-xs-offset-1 col-md-11">
+		<h1>Coffee House</h1>
+		<a href="https://www.google.ca/maps/place/Starbucks/@43.8226838,-79.328006,17z/data=!3m1!4b1!4m2!3m1!1s0x89d4d387bc2ab90f:0x1f30c9ebd73d6fa1" id="starbucksLocation"><h4>@ Warden & Steeles </h4></a>
+		</div>
+		<div class="col-xs-10 col-xs-offset-1 col-md-11" id="coffeehouseBtn">
+	 <p>
+	 <a class="btn btn-primary" id="signup" role="button" href="/signup">I want to Perform!</a>
+
+  </p>
+	</div>
+	</div>
+	<div style="position:absolute;bottom:0px;height:40px;background-color:rgb(45, 70, 76);width:100%">
+	<div class="container text-right verticalCenter">
+	<div class="col-xs-10 col-xs-offset-1 col-md-11">
+	<h5>Fall Coffee House | Presented by <b>Starbucks</b> | Saturday, November 7th | 6:00PM</h5>
+	</div>
+
+	</div>
+	
+	</div>
+</div>
+
+<div class="row coffeehouseInfo">
+<div class="container verticalCenter">
+<div class="col-xs-12 col-md-6" style="padding-top:40px">
+<h2>Arts has never felt more at home.</h2>
+<p>In collaboration with Starbucks, Creativity Through Arts is bringing a seasonal coffee house to your local starbucks. An evening filled with live performance and arts galore, this is an event you don't want to miss. Discounts included with every visit with a student card!</p>
+<div class="text-center">
+<img src="/media/coffee1.png" width="50%" id="coffee">
+</div>
+</div>
+<div class="col-xs-12 col-md-6 text-center" style="margin-bottom:40px">
+<img src="/media/coffeehousefall.jpeg" width="70%">
+
+</div>
+
+</div>
+</div>
+
+<div class="row">
+<div class="map-container">
+    {{> googleMap name="exampleMap" options=exampleMapOptions}}
+  </div>
+
+</div>
+
+
+
+
+
+
+{{> footer}}
+</template>
