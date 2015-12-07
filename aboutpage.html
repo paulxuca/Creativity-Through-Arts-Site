@@ -3,10 +3,11 @@
 <meta name="description" content="About Creativity Through Arts - Our mission, values and beliefs and our team memebers. Creativity Through Arts is a youth council focused on providing opportunities for youth leaders and performers.">
 </head>
 {{> navbar}}
+{{> teampopupPanel}}
 <div class="aboutpageGeneral wow fadeInLeft" style="font-family:'Lato', sans-serif">
 <div class="row aboutpageHeader" style="height:100vh;background-image:url('/media/aboutpageMain.jpg');background-size:cover">
   <div class="container verticalCenter">
-  <div class="col-md-6 col-md-offset-6 col-xs-12 infoBanner" style="background-color:orange;color:white;padding:20px 20px 20px 20px;">
+  <div class="col-md-6 col-md-offset-6 col-xs-12 infoBanner" style="background-color:rgba(255,165,0,0.8);color:white;padding:20px 20px 20px 20px;">
     <h2 style="font-weight:700;padding-left:2px">Who are we?</h2>
     <p style="font-size:16px;font-weight:300">Creativity Through Arts was founded in 2014 with an aim to encourage youth leaders of the community to continue pursuing their artistic hobbies. We provide them with a platform of opportunities to perform and showcase their unique styles. We are based in Markham, Ontario but we hope to expand and reach out to youths internationally in the near future.</p>
     <a class="btn btn-default" href="mailto:creativitythrougharts@gmail.com">JOIN AS A GENERAL MEMBER</a>
@@ -15,6 +16,7 @@
   </div>
   <div class="row wow fadeInLeft" style="padding-top:70px">
     <div class="container textCenter">
+    <div>
       <div class="col-md-4">
         <h2 style="font-weight:600">History</h2>
         <p style="font-size:16px;font-weight:300">Creativity Through Arts was founded in 2014 with an aim to encourage youth leaders of the community to continue pursuing their artistic hobbies. As a collective, we have hosted 3 events for hundreds of people and attracted attention from youth, the town and media. We hope to create more history with you!</p>
@@ -27,18 +29,16 @@
         <h2 style="font-weight:600">Motivation</h2>
         <p style="font-size:16px;font-weight:300">Although we are motivated to succeed internally, our biggest source of motivation is from the success we see in youth through our events and the events we sponsor. Creativity Through Arts wants nothing more than to see young artists and leaders succeed in the community.</p>
       </div>       
-    </div>
+      </div>
+    
 
     <div class="container text-center" style="padding-top:20px">
-      <h2 style="font-weight:600">The Team</h2>
-      <div id="#diane" style="display:none">
-    <img src="/media/diane.jpg">
+      <h2 style="font-weight:600;text-align:center">The Team</h2>
   </div>
 
         {{> teamPanel}}
     </div>
-  </div>
-
+    </div>
 
   <div class="row row wow fadeInLeft text-center">
   <div class="container" style="margin-bottom:20px" id="sponsors">
@@ -86,7 +86,7 @@
   </div>
 
   </div>
-
+</div>
 <!--
   <div class="row" style="padding-top:20px;">
   <div class="wow fadeInLeft">
@@ -118,7 +118,6 @@
 </div>
 </div>
 !-->
-</div>
 
   {{> footer}}
     </template>

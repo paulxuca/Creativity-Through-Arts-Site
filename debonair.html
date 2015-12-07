@@ -19,17 +19,101 @@ canvas{
 	display: block;
   vertical-align:bottom;
   z-index:-1;
+  height:100vh !important;
 }
 
 #particles-js{
 
-  background: -webkit-linear-gradient(90deg, #16222A 10%, #3A6073 90%); /* Chrome 10+, Saf5.1+ */
-  background:    -moz-linear-gradient(90deg, #16222A 10%, #3A6073 90%); /* FF3.6+ */
-  background:     -ms-linear-gradient(90deg, #16222A 10%, #3A6073 90%); /* IE10 */
-  background:      -o-linear-gradient(90deg, #16222A 10%, #3A6073 90%); /* Opera 11.10+ */
-  background:         linear-gradient(90deg, #16222A 10%, #3A6073 90%); /* W3C */
+   background: linear-gradient(to bottom, #020111 10%,#3a3a52 100%);
         
 }
+
+#features .container .col-md-4{
+  min-height:50vh;
+  border-radius: 10px;
+  text-align: center;
+
+}
+
+#features .container .col-md-4:hover{
+  background-color: rgba(0,0,0,0.1)
+
+}
+
+#features .container .col-md-4 h3{
+  font-weight: 800;
+}
+
+*:hover{
+    -moz-transition: all 0.2s ease-out;  /* FF4+ */
+    -o-transition: all 0.2s ease-out;  /* Opera 10.5+ */
+    -webkit-transition: all 0.2s ease-out;  /* Saf3.2+, Chrome */
+    -ms-transition: all 0.2s ease-out;  /* IE10? */
+    transition: all 0.2s ease-out; 
+
+}
+
+.debonairTitle{
+  font-size: 160px;
+  line-height:0.7;
+}
+
+#signupDebonair{
+  min-height:124px;
+  background-color:#ffcc00;
+  border-style:solid;
+  border-width:3px;
+  border-color:black;
+  color:black;
+
+}
+
+@media screen and (max-width: 600px){
+  .container{
+  padding-left:10px;
+  padding-right:10px;
+}
+
+  .debonairTitle{
+  font-size: 80px;
+}
+
+  #signupDebonair{
+    min-height: 152px;
+
+  }
+
+
+
+
+}
+
+
+#signupDebonair p{
+  line-height: 1.2;
+
+}
+
+#signupDebonair h3{
+  margin-top: 10px;
+  
+}
+#signupDebonair:hover{
+background-color:black;
+border-style:solid;
+border-color: #ffcc00;
+border-width:3px;
+color:#ffcc00;
+}
+
+
+#helloDiane{
+font-weight: 900;
+color: white;
+
+}
+
+
 
 </style>
 
@@ -49,16 +133,88 @@ canvas{
 
 
 !-->
+<div style="font-family:'Montserrat', sans-serif;" >
+<div id="particles-js" class="debonairHeader">
+  <div class="row">
+    <div class="container verticalCenter" style="position:absolute;width:100%;text-align:center;font-family: 'Megrim', cursive;color:white;">
+        <h1 class="debonairTitle">Debonair</h1>
+        <h2 style="color:#ffcc00;margin-top:5px;">Fashion Show</h2>
+      <div class="col-md-6 col-md-offset-3 col-xs-12" style="padding-top:4vh">
+        <div class="col-xs-4" id="helloDiane"> 
+        <p><b>Location:</b> Varley Art Gallery</p>
+        </div>
+        <div class="col-xs-4" id="helloDiane">
+        <p><b>Date and Time:</b> November 28th, 5:00PM - 7:00PM</p>
+        </div>
+        <div class="col-xs-4" id="helloDiane">
+        <p><b>Price:</b> $5/Person</p>
+        </div>
 
-<div id="particles-js">
-<div class="row">
-<div class="container" style="padding-top:200px;position:absolute;width:100%">
-<h1 style="text-align:center;font-family: 'Megrim', cursive;color:white;font-size:100px">Debonair</h1>
-<h5>Fashion Show</h5>
-</div>
-</div>
+      </div>
+    </div>
+
+
+  </div>
 </div>
 
+<div class="row" style="min-height:50vh;padding-top:30px;font-family: 'Montserrat', sans-serif">
+  <div class="container">
+  <div class="col-md-6">
+  <h2 style="color:#ffcc00">Deb·o·nair</h2>
+  <h5>/ˌdebəˈner/</h5>
+  <p style="font-size:20px">Old French for confident, stylish, and charming.
+New English for suave, urbane and sophisticated.
+Most recently, CTA for the special occasion where youth models, make-up artists, and fashion designers with all the above qualities will gather.</p>
+
+  </div>
+  <div class="col-md-6">
+
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/D4zYdYaAGHo"></iframe>
+</div>
+
+
+
+
+  </div>
+  </div>
+</div>
+
+
+<div class="row" style="min-height:50vh;padding-bottom:30px" id="features">
+<div class="container" style="height:100%">
+<div class="col-md-4">
+<img src="/media/debonair/model.svg">
+<h3>MODEL</h3>
+<p>Want to flaunt what you got? We want to see what you got. Come model clothes made by your peers or our sponsors!</p>
+
+</div>
+<div class="col-md-4">
+<img src="/media/debonair/makeup.svg">
+<h3>MAKEUP</h3>
+<p>Are you a makeup guru? Have 20000 subscribers on YouTube? Have 2 Subscribers (Your mom and dad?) Come to Debonair to learn the art of makeup!</p>
+
+
+</div>
+<div class="col-md-4">
+<img src="/media/debonair/design.svg">
+<h3>DESIGN</h3>
+<p>Make clothes? Want to start your own clothing line but don't have enough attention? Want to build your brand at your local fashion week? Come to Debonair to show off your skill!</p>
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+</div>
+
+
+</div>
 {{> footer}}
 
 

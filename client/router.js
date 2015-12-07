@@ -55,21 +55,3 @@ Router.route('/debonair', {
     template: 'debonair',
     title: 'Creativity Through Arts - Debonair'
 });
-
-
-Router.map(function () {
-  this.route('teamPage', {
-    path: '/team/:_id',
-      waitOn: function(){
-    return Meteor.subscribe('teammembers');
-    },
-    data: function(){
-     if(this.ready()){
-       return TeamMembers.findOne({_id: this.params._id});
-     }else{
-       this.render('loading') 
-     }      
-    }
-  });
-}); 
-
