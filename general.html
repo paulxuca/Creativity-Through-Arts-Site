@@ -58,6 +58,31 @@
 
 </footer>
 </div>
+<script type="text/javascript">
+if ($("#overlay").length) {
+    console.log('hello');
+        $(function(){
+        var navbar = $('.navbar');
+        navbar.addClass("transparent");
+      });
+
+      $(window).scroll(function() {
+        if ($(this).scrollTop() > $('.overlay')[0].scrollHeight){ // Set position from top to add class
+            $('.navbar').removeClass("transparent");
+            $('.navbar').addClass("orangebackground");
+        } else {
+            $('.navbar').addClass("transparent");
+            $('.navbar').removeClass("orangebackground");
+
+        }
+    });
+}else{
+  $(function(){
+    $('.navbar').addClass("orangebackground");
+
+  });
+}
+</script>
 </template>
 
 
@@ -146,7 +171,6 @@
 
   ga('create', 'UA-68460643-1', 'auto');
   ga('send', 'pageview');
-
 </script>
 </template>
 

@@ -57,10 +57,27 @@ a:hover{
     background:         linear-gradient(45deg, rgba(255,78,80,0.9), rgba(249,212,35,0.9)); /* W3C */
 }
 
+.transparent{
+  background-color: rgba(0,0,0,0) !important;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+.orangebackground{
+  background-color: orange !important;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
 /*  ---------------- NAVBAR CSS CODE ---------- */
 
 .navbar{
-  background-color: orange;
   border:none;
   z-index:1000;
 }

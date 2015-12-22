@@ -5,7 +5,7 @@ TeamMembers = new Mongo.Collection('teammembers');
 
 
 if (Meteor.isClient) {
-
+Meteor.subscribe("teammembers");
 Template.homePage.rendered = new WOW().init()
 
 Template.eventsPanel.helpers({
